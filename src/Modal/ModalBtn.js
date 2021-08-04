@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { useState } from 'react';
-import Modal from './Modal/Modal';
+import Modal from './ModalBox';
 
-function Library() {
+function ModalBtn() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleModal = () => {
@@ -25,7 +25,7 @@ function Library() {
   );
 }
 
-export default Library;
+export default ModalBtn;
 
 const Container = styled.div`
   width: 100%;

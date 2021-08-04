@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Modal(props) {
+function ModalBox(props) {
   return (
     <ModalContainer>
       <ModalBg onClick={props.closeModal} />
-      <ModalBox>
+      <ModalSquare>
         <h3>Modal Test</h3>
         <p>
           Lorem ipsum dolor sit amet, <br />
           consectetur adipiscing elit.
         </p>
-      </ModalBox>
+      </ModalSquare>
     </ModalContainer>
   );
 }
 
-export default Modal;
+export default ModalBox;
 
 const ModalContainer = styled.div`
   position: fixed;
@@ -32,7 +32,7 @@ const ModalBg = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
-const ModalBox = styled.div`
+const ModalSquare = styled.div`
   position: fixed;
   margin: 200px auto;
   left: 0;
